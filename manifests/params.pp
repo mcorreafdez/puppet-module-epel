@@ -34,12 +34,14 @@ class epel::params {
   $epel_testing_proxy                     = $proxy
   $epel_testing_enabled                   = '0'
   $epel_testing_gpgcheck                  = '1'
+  $epel_testing_exclude                   = 'ast'
   $epel_source_mirrorlist                 = "https://mirrors.fedoraproject.org/${url_path}?repo=epel-source-${os_maj_release}&arch=\$basearch"
   $epel_source_baseurl                    = 'absent'
   $epel_source_failovermethod             = 'priority'
   $epel_source_proxy                      = $proxy
   $epel_source_enabled                    = '0'
   $epel_source_gpgcheck                   = '1'
+  $epel_source_exclude                    = 'ast'
   $epel_debuginfo_mirrorlist              = "https://mirrors.fedoraproject.org/${url_path}?repo=epel-debug-${os_maj_release}&arch=\$basearch"
   $epel_debuginfo_baseurl                 = 'absent'
   $epel_debuginfo_failovermethod          = 'priority'
@@ -53,11 +55,13 @@ class epel::params {
   $epel_testing_source_proxy              = $proxy
   $epel_testing_source_enabled            = '0'
   $epel_testing_source_gpgcheck           = '1'
+  $epel_testing_source_exclude            = 'ast'
   $epel_testing_debuginfo_mirrorlist      = "https://mirrors.fedoraproject.org/${url_path}?repo=testing-debug-epel${os_maj_release}&arch=\$basearch"
   $epel_testing_debuginfo_baseurl         = 'absent'
   $epel_testing_debuginfo_failovermethod  = 'priority'
   $epel_testing_debuginfo_proxy           = $proxy
   $epel_testing_debuginfo_enabled         = '0'
   $epel_testing_debuginfo_gpgcheck        = '1' 
+  $epel_testing_debuginfo_exclude         = 'ast'
 
 }
